@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin-top: 10px;
+}
+
+div.ip-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px; /* Add some space between the button and the videos */
+}
+
+.ip-container label {
+    margin-right: 10px; /* Add some space between the label and input */
+}
+
+.ip-container input {
+    width: 150px; /* Adjust the width as needed */
+    margin-right: 15px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px; /* Add some space between the button and the videos */
+}
+
+h2 {
+    margin-bottom: 5px; /* Add some space between the heading and the video */
+}
+
+.video-container {
+    width: 85%; /* Adjust the width as needed */
+}
+
+.video-image {
+    max-width: 100%; /* Make sure the video doesn't exceed its container's width */
+}
+
+/* Media query for screens less than 900px */
+@media (max-width: 900px) {
+    div {
+        flex-direction: column; /* Change to column layout for smaller screens */
+        align-items: center; /* Center videos vertically when in column layout */
+    }
+
+    .video-container {
+        max-width: 80%; /* Adjust the width for smaller screens */
+    }
+}
